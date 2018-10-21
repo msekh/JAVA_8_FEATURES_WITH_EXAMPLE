@@ -12,14 +12,16 @@ public class ClientTest {
 		map.put(2, "B");
 		map.put(3, "C");
 
-		//BiConsumer<Integer, String> biConsumer = (k, v) -> System.out.println("Key:" + k + "\t" + "Value:" + v);
+		// BiConsumer<Integer, String> biConsumer = (k, v) -> System.out.println("Key:"
+		// + k + "\t" + "Value:" + v);
 		map.forEach((k, v) -> System.out.println("Key:" + k + "\t" + "Value:" + v));
-	
-		Map<Integer,Student> stuMap =new HashMap<>();
+
+		Map<Integer, Student> stuMap = new HashMap<>();
 		stuMap.put(1001, new Student("Martin", 1923012012L));
 		stuMap.put(1002, new Student("Frank", 1715194976L));
-	
-		//BiConsumer<Integer, Student> stuBiConsumer = (k, v) -> System.out.println("Key:" + k + "\t" + "Value:" + v);
+
+		// BiConsumer<Integer, Student> stuBiConsumer = (k, v) ->
+		// System.out.println("Key:" + k + "\t" + "Value:" + v);
 		stuMap.forEach((k, v) -> System.out.println("Key:" + k + "\t" + "Value:" + v));
 	}
 }
