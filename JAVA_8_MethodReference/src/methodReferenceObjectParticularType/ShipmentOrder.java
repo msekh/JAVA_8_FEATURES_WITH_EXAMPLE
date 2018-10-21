@@ -27,7 +27,7 @@ public class ShipmentOrder {
 		// Using a lambda expression
 		System.out.println("Lambda Expression: ");
 		computer.orderComputer(l, s -> s.generateOrderNumber()).forEach(System.out::println);
-		//Using method reference
+		// Using method reference
 		System.out.println("Method reference: ");
 		computer.orderComputer(l, Computer::generateOrderNumber).forEach(System.out::println);
 
